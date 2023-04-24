@@ -251,7 +251,7 @@ function FlowChart() {
                 t1_t2_t3("INR");
                 await delay(5000);
                 ///////////////////
-                refROM.current.value+="T2: A(E,L), A=A-1 \n";
+                refROM.current.value+="T2: A(E,L), A=A+1 \n";
                 await delay(500);
                 colorGreen(refA);
                 refA.current.value=(decimalA+1).toString(2);
@@ -272,7 +272,7 @@ function FlowChart() {
                 t1_t2_t3("DCR");
                 await delay(5000);
                 ///////////////////
-                refROM.current.value+="T2: A(E,L), A=A+1 \n";
+                refROM.current.value+="T2: A(E,L), A=A-1 \n";
                 await delay(500);
                 colorGreen(refA);
                 refA.current.value=(decimalA-1).toString(2);
